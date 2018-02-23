@@ -12,7 +12,7 @@ We provided you with sample data to make your task easier. This sample data is c
   - a collection of dealers;
     - each dealer contains a set of vehicles that are available on its dealership;
     - each vehicle presents its own set of attributes (eg: model, fuel type, transmission type and days of the week that it's available for a test drive).
-  - a collection of bookings.
+  - a collection of already scheduled bookings.
 
 ## Data Structure:
 
