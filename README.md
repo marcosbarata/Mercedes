@@ -1,8 +1,6 @@
 # MB.io - SINFO Test Drive Challenge API (backend)
 
-We, at **Mercedes-Benz.io**, build products for our customers.
-
-These products go from the site that sells our vehicles to the applications that control them.
+We, at Mercedes-Benz.io build customer focussed products. These products go from the site that sells our cars to the applications that control and monitor them.
 
 One of the web applications that we built for our customers is **Test Drive**. It allows a customer to book a test drive on a vehicle and dealer of his choice, simplifying the whole process for him.
 
@@ -10,7 +8,11 @@ Taking that into account, we challenge you to try to build a similar service. By
 
 On the business side, it's simple. Usually, customers choose a vehicle with a given set of attributes (fuel type, transmission, etc) and then they choose a retailer near them, booking the vehicle for an available time slot.
 
-We provided you with sample data to make your task easier. The sample data contains a collection of dealers, each dealer contains a set of vehicles that are available on his dealership, where each vehicle presents its own attributes (eg: fuel type, transmission type and days of the week that it's available for a test drive).
+We provided you with sample data to make your task easier. This sample data is composed of:
+  - a collection of dealers;
+    - each dealer contains a set of vehicles that are available on its dealership;
+    - each vehicle presents its own set of attributes (eg: model, fuel type, transmission type and days of the week that it's available for a test drive).
+  - a collection of bookings.
 
 ## Data Structure:
 
