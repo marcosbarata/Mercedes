@@ -64,7 +64,8 @@ A file in JSON format is provided and this data should be loaded at application 
 | cancelledReason   | Text  | Reason for the booking cancelation |  
 
 
-###### Sample of provided JSON (data source):
+#### Sample of provided JSON (data source):
+
 ```
 {
   "dealers": [
@@ -118,7 +119,7 @@ A file in JSON format is provided and this data should be loaded at application 
 ```
 
 
-## The API:
+## What to do... build the API:
 
 We expect that you build a Restful API that should implement the following features:
 
@@ -132,12 +133,12 @@ We expect that you build a Restful API that should implement the following featu
 - Cancel a booking (giving a reason for cancelation)
 
 
-## API improvements:
+## Improvement suggestions:
 
 - Find the dealers sorted by distance according to my location that have a vehicle with specific attributes (Model, Fuel Type, Transmission) [returns any number of dealers]
 - Find the dealers inside a given polygon that have a vehicle with specific attributes (Model, Fuel Type, Transmission) [returns any number of dealers]
 
-## Implementation Requirements:
+## Implementation requirements:
 
 - At MB.io our stack is Java and maven for dependency management but you are free to choose any open source language/tool you want.
 - Load provided data (dealers, vehicles and existing bookings) at application startup.
