@@ -119,7 +119,7 @@ A file in JSON format is provided and this data should be loaded at application 
 ```
 
 
-## What to do... build the API:
+## The challenge
 
 We expect that you build a Restful API that should implement the following features:
 
