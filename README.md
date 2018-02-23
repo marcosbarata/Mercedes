@@ -1,6 +1,6 @@
 # MB.io - SINFO Test Drive Challenge API (backend)
 
-### Description:
+## Description:
 
 We, at **Mercedes-Benz.io**, build products for our customers.
 
@@ -14,7 +14,7 @@ On the business side, it's simple. Usually, customers choose a vehicle with a gi
 
 We provided you with sample data to make your task easier. The sample data contains a collection of dealers, each dealer contains a set of vehicles that are available on his dealership, where each vehicle presents its own attributes (eg: fuel type, transmission type and days of the week that it's available for a test drive).
 
-### Data Structure:
+## Data Structure:
 
 A file in JSON format is provided and this data should be loaded at application startup. Below is a description of it:
 
@@ -120,7 +120,7 @@ A file in JSON format is provided and this data should be loaded at application 
 ```
 
 
-### The API:
+## The API:
 
 We expect that you build a Restful API that should implement the following features:
 
@@ -134,12 +134,12 @@ We expect that you build a Restful API that should implement the following featu
 - Cancel a booking (giving a reason for cancelation)
 
 
-##### API improvements:
+## API improvements:
 
 - Find the dealers sorted by distance according to my location that have a vehicle with specific attributes (Model, Fuel Type, Transmission) [returns any number of dealers]
 - Find the dealers inside a given polygon that have a vehicle with specific attributes (Model, Fuel Type, Transmission) [returns any number of dealers]
 
-### Implementation Requirements:
+## Implementation Requirements:
 
 - At MB.io our stack is Java and maven for dependency management but you are free to choose any open source language/tool you want.
 - Load provided data (dealers, vehicles and existing bookings) at application startup.
