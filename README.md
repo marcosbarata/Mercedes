@@ -1,4 +1,4 @@
-# Mercedes-Benz.io - SINFO Test Drive Challenge API (backend)
+# MB.io - SINFO Test Drive Challenge API (backend)
 
 ### Description:
 
