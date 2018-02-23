@@ -138,7 +138,7 @@ We expect that you build a Restful API that should implement the following featu
 - Find the dealers sorted by distance according to my location that have a vehicle with specific attributes (Model, Fuel Type, Transmission) [returns any number of dealers]
 - Find the dealers inside a given polygon that have a vehicle with specific attributes (Model, Fuel Type, Transmission) [returns any number of dealers]
 
-## Implementation requirements:
+## Requirements:
 
 - At MB.io our stack is Java and maven for dependency management but you are free to choose any open source language/tool you want.
 - Load provided data (dealers, vehicles and existing bookings) at application startup.
@@ -152,7 +152,7 @@ We expect that you build a Restful API that should implement the following featu
     - Explanation about your choices, their limitations and possible improvements
     - Any additional information you may think is relevant
 
-## Questions regarding the challenge
+## Troubleshooting
 
 If you have any questions regarding the challenge or find a bug with the exercise, please use GitHub issues.
 
