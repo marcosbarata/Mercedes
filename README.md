@@ -1,7 +1,5 @@
 # MB.io - SINFO Test Drive Challenge API (backend)
 
-## Description:
-
 We, at **Mercedes-Benz.io**, build products for our customers.
 
 These products go from the site that sells our vehicles to the applications that control them.
