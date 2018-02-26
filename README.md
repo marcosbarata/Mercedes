@@ -138,6 +138,7 @@ We expect that you build a Restful API that should implement the following featu
 - Create a new booking (Once a booking is made you can't double book a vehicle for that time slot)
 - Cancel a booking (giving a reason for cancelation)
 
+Download the sample data [dataset.json](https://github.com/mercedesbenzio/SINFO-backend-challenge/blob/master/dataset.json) for the challenge.
 
 ## Improvement suggestions:
 
