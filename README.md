@@ -108,7 +108,7 @@ A file in JSON format is provided and this data should be loaded at application 
       "id": "1c6bd910-12b1-45d6-b4d8-cdff2f37db90",
 			"firstName": "Joanna",
 			"lastName": "Randolph",
-			"vehicleId": "44a36bfa-ec8f-4448-b4c2-809203bdcb9e",
+			"vehicleId": "3928f780-295b-4dd0-8cc9-28c0738398d9",
 			"pickupDate": "2018-03-03T10:30:00",
 			"createdAt": "2018-02-26T08:42:46.291"
 		},
@@ -116,7 +116,7 @@ A file in JSON format is provided and this data should be loaded at application 
 			"id": "fdaab47c-a067-43bd-8278-eec5ca413fd3",
 			"firstName": "Abdullah",
 			"lastName": "Randolph",
-			"vehicleId": "875f00fa-9f67-44ea-bb26-75ff375fdd3f",
+			"vehicleId": "3928f780-295b-4dd0-8cc9-28c0738398d9",
 			"pickupDate": "2018-03-06T10:30:00",
 			"createdAt": "2018-02-26T08:42:46.3"
 		}
