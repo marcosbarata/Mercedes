@@ -8,11 +8,13 @@ Taking that into account, we challenge you to try to build a similar service. By
 
 On the business side, it's simple. Usually, customers choose a vehicle with a given set of attributes (fuel type, transmission, etc) and then they choose a retailer near them, booking the vehicle for an available time slot.
 
-We provided you with sample data to make your task easier. This sample data is composed of:
+We provided you with [sample data](https://github.com/mercedesbenzio/SINFO-backend-challenge/blob/master/dataset.json) to make your task easier. This sample data is composed of:
   - a collection of dealers;
     - each dealer contains a set of vehicles that are available on its dealership;
     - each vehicle presents its own set of attributes (eg: model, fuel type, transmission type and days of the week that it's available for a test drive).
   - a collection of already scheduled bookings.
+
+Download the sample data [dataset.json](https://github.com/mercedesbenzio/SINFO-backend-challenge/blob/master/dataset.json)
 
 ## Data Structure:
 
@@ -34,6 +36,7 @@ A file in JSON format is provided and this data should be loaded at application 
 | latitude | Number | Latitude of dealer's location  |
 | longitude | Number | Longitude of dealer's location  |
 | vehicles   | List  | List of vehicles in that dealer  |
+| closed | List | List of days that the dealer is closed for  business |
 
 ###### Vehicle:
 
@@ -43,14 +46,14 @@ A file in JSON format is provided and this data should be loaded at application 
 | model  | String  | Vehicle model (eg: 'A-Class', 'C-Class', 'E-Class', 'S-Class')  |
 |fuel   | String  | Fuel type of the vehicle (eg: 'petrol', 'diesel', 'hybrid')  |
 | transmission   | String  | Vehicle transmission type (eg: 'manual', 'automatic')  |
-| availability   | List  | List with the hours available for booking by weekday. This represents the general availability of a vehicle and is not changed when a booking is made.  |
+| availability   | Hash  | Key/Value pair, with days of the week (keys) and the hours (values) available for booking. This represents the general availability of a vehicle and is not changed when a booking is made.  |
 
 ###### Availability:
 
 | Field     | Format     | Description |
 | :-------- | :--------- | :---------- |
-| day | String | Day of the week when the booking should be available (eg: monday, tuesday) |
-| timeslots | List[String] | List of slots in a day where the car is available for a booking  |
+| key | String | Day of the week when the booking should be available (eg: monday, tuesday) |
+| value | List[String] | List of slots in a hours where the car is available for a booking  |
 
 ###### Booking:
 
@@ -72,49 +75,48 @@ A file in JSON format is provided and this data should be loaded at application 
 {
   "dealers": [
     {
-      "id": "D0001",
-      "name": "Mercedes-Benz Lisbon Retail",
-      "latitude": 38.748347,
-      "longitude": -9.148398,
+      "id": "ab49f56a-451d-4721-8319-efdca5e69680",
+      "name": "MB Albufeira",
+      "latitude": 37.104404,
+      "longitude": -8.236308,
+      "closed": [
+        "tuesday",
+        "wednesday"
+      ],
       "vehicles": [
         {
-          "id": "D0001C1",
-          "model": "A-Class",
-          "fuel": "petrol",
-          "transmission": "manual",
-          "availability": [
-            {
-              "day": "monday",
-              "timeslots": [
-                "0900",
-                "0930",
-                "1030"
-              ]
-            },
-            {
-              "day": "tuesday",
-              "timeslots": [
-                "0830",
-                "0930",
-                "1030",
-                "1100"
-              ]
-            }
-          ]
+          "id": "3928f780-295b-4dd0-8cc9-28c0738398d9",
+          "model": "AMG",
+          "fuel": "ELECTRIC",
+          "transmission": "AUTO",
+          "availability": {
+            "thursday": [
+              "1000",
+              "1030"
+            ],
+            "monday": [
+              "1000",
+              "1030"
+            ]
+          }
         }
       ]
     }
   ],
   "bookings": [
     {
-      "id": "B0001",
-      "vehicleId": "D0001C1",
-      "firstName": "John",
-      "lastName": "Doe",
-      "pickupDate": "2018-01-06T10:30:00",
-      "createdAt": "2018-01-05T00:30:00",
-      "cancelledAt": null,
-      "cancelledReason": null
+      "id": "0ed5ab84-4c4d-4f0a-a0d6-3b4bfd5d3a3b",
+      "firstName": "Joanna",
+      "lastName": "Henderson",
+      "vehicleId": "9bd839d5-6c09-4f10-805e-f02911dedff4",
+      "date": "2018-03-05T10:30:00"
+    },
+    {
+      "id": "8f36e10c-6321-48e0-97b0-e3a407e9d3d3",
+      "firstName": "Eddie",
+      "lastName": "Shaffer",
+      "vehicleId": "14cd9b51-72c2-433e-b53a-e06072f7130f",
+      "date": "2018-03-07T10:00:00"
     }
   ]
 }
