@@ -105,19 +105,21 @@ A file in JSON format is provided and this data should be loaded at application 
   ],
   "bookings": [
     {
-      "id": "0ed5ab84-4c4d-4f0a-a0d6-3b4bfd5d3a3b",
-      "firstName": "Joanna",
-      "lastName": "Henderson",
-      "vehicleId": "9bd839d5-6c09-4f10-805e-f02911dedff4",
-      "date": "2018-03-05T10:30:00"
-    },
-    {
-      "id": "8f36e10c-6321-48e0-97b0-e3a407e9d3d3",
-      "firstName": "Eddie",
-      "lastName": "Shaffer",
-      "vehicleId": "14cd9b51-72c2-433e-b53a-e06072f7130f",
-      "date": "2018-03-07T10:00:00"
-    }
+      "id": "1c6bd910-12b1-45d6-b4d8-cdff2f37db90",
+			"firstName": "Joanna",
+			"lastName": "Randolph",
+			"vehicleId": "44a36bfa-ec8f-4448-b4c2-809203bdcb9e",
+			"pickupDate": "2018-03-03T10:30:00",
+			"createdAt": "2018-02-26T08:42:46.291"
+		},
+		{
+			"id": "fdaab47c-a067-43bd-8278-eec5ca413fd3",
+			"firstName": "Abdullah",
+			"lastName": "Randolph",
+			"vehicleId": "875f00fa-9f67-44ea-bb26-75ff375fdd3f",
+			"pickupDate": "2018-03-06T10:30:00",
+			"createdAt": "2018-02-26T08:42:46.3"
+		}
   ]
 }
 ```
