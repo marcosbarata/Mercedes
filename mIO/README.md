@@ -7,6 +7,12 @@ marcosbarata@tecnico.ulisboa.pt
 3)run "mvn clean compile"
 4)run "mvn exec:java -D"exec.mainClass"="merc.marcos.barata.App" "
 5) now the app is running
+
+you can also try 
+
+4) run "mvn exec:java -D"exec.mainClass"="merc.marcos.barata.App" -D"exec.args"="src/main/java/merc/marcos/barata/simple.json" "
+
+
 ----------- Test the App -------------------
 I tested the app manually trying my inputs
 ----------- API ----------------------------
@@ -18,7 +24,7 @@ This App consists in a menu that can execute 7 actions:
 -Find closest Dealer for especific Vehicle
 -Create new Booking
 -Cancel an already existing Booking
-This app reads an import JSON file to get/load all the information about the Dealers,Bookings,Vehicles,Availability to the principal class that is Mercedes. This app implements the Command design pattern that gives us the power App class the power to send a command to the Mercedes class, that does all the computational work. All of the interaction between the user and the App is done by using the System.in and System.out. The inputs are read using Scanner and the outputs are shown using print and println.
+This app reads an import JSON file give by an argument when running the program or by default("src/main/java/merc/marcos/barata/dataset.json") the given dataset to get/load all the information about the Dealers,Bookings,Vehicles,Availability to the principal class that is Mercedes.The load action is parsed using the JSON class. This app implements the Command design pattern that gives us the power App class the power to send a command to the Mercedes class, that does all the computational work. All of the interaction between the user and the App is done by using the System.in and System.out. The inputs are read using Scanner and the outputs are shown using print and println.
 The first 4 commands are pretty easy and only interact with the user using the System.out, because all they do is List the vehicles given a certain "Iterator".
 The last 3 commands are more difficult to implement and interact because they use System.in and System.out and the verification of the input parameters is "tricky" given the time to develop. But the application should cover the all the basic cases and give error messages when something is wrong withi«out terminate the program.
 ----------Additional information -------------------
